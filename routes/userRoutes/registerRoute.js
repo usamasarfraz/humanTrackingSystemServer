@@ -29,7 +29,7 @@ user.post('/send_mail',(req,res)=>{
 user.post('/verified_user',(req,res)=>{
   client.messages.create({
     body: `Welcome to Let's Locate.`,
-    from: '+12132143870',
+    from: '+43720883238',
     to: '+92'+req.body.contact.slice(1)
   }).then((message)=>{
       console.log(message.sid);

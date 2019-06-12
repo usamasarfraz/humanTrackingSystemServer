@@ -6,7 +6,7 @@ module.exports = {
         if(body.phoneCheck){
             client.messages.create({
                 body: `Your Let's Locate verification code is: ${body.token}`,
-                from: '+12132143870',
+                from: '+43720883238',
                 to: '+92'+data.contact.slice(1)
             }).then((message)=>{
                 console.log(message.sid);
